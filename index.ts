@@ -89,25 +89,18 @@ app.post("/post/number", async (req: Request, res: Response) => {
       return res.status(500).json({ message: "Internal server error" });
     }
   });
-// Start the Express server
-const PORT = process.env.PORT || 5050;
-app.listen(PORT, () => {
-  console.log(`Server ready on port ${PORT}.`);
-});
-
-async function main() {
-  console.log("Server ready at: http://localhost:5050");
-}
-
-main()
-  .catch(async (e) => {
-    console.error(e);
-    process.exit(1);
-  });
-
-// Gracefully disconnect Prisma when the process exits
-process.on('SIGINT', async () => {
-  await prisma.$disconnect();
-  console.log('Prisma disconnected');
-  process.exit(0);
-});
+  app.listen(5050, () => console.log("Server ready on port 5050."));
+  module.exports = app;
+  async function main() {
+      // ... you will write your Prisma Client queries here
+      console.log("Server ready at: http://localhost:5050")
+  }
+  
+  main()
+    .catch(async (e) => {
+      console.error(e)
+      process.exit(1)
+    })
+    .finally(async () => {
+      await prisma.$disconnect()
+    })
