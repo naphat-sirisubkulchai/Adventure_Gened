@@ -1,0 +1,75 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Number1{
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  choice1 Int
+  choice2 Int
+  choice3 Int
+}
+model Number2{
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  choice1 Int
+  choice2 Int
+  choice3 Int
+}
+model Number3{
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  choice1 Int
+  choice2 Int
+  choice3 Int
+}
+model Number4{
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  choice1 Int
+  choice2 Int
+  choice3 Int
+}
+model Number5{
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  choice1 Int
+  choice2 Int
+  choice3 Int
+}
+model Number6{
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  choice1 Int
+  choice2 Int
+  choice3 Int
+}
+model Number7{
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  choice1 Int
+  choice2 Int
+  choice3 Int
+}
+model Number8{
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  choice1 Int
+  choice2 Int
+  choice3 Int
+}
+model Number9{
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  choice1 Int
+  choice2 Int
+  choice3 Int
+}
+model Number10{
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  choice1 Int
+  choice2 Int
+  choice3 Int
+}
