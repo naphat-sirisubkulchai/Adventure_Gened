@@ -15,61 +15,8 @@ datasource db {
 
 model Number1{
   id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  choice1 Int
-  choice2 Int
-  choice3 Int
-}
-model Number2{
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  choice1 Int
-  choice2 Int
-  choice3 Int
-}
-model Number3{
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  choice1 Int
-  choice2 Int
-  choice3 Int
-}
-model Number4{
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  choice1 Int
-  choice2 Int
-  choice3 Int
-}
-model Number5{
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  choice1 Int
-  choice2 Int
-  choice3 Int
-}
-model Number6{
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  choice1 Int
-  choice2 Int
-  choice3 Int
-}
-model Number7{
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  choice1 Int
-  choice2 Int
-  choice3 Int
-}
-model Number8{
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  choice1 Int
-  choice2 Int
-  choice3 Int
-}
-model Number9{
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  choice1 Int
-  choice2 Int
-  choice3 Int
-}
-model Number10{
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  choice1 Int
-  choice2 Int
-  choice3 Int
+  Number String @unique
+  choice1 Int @default(0)
+  choice2 Int @default(0)
+  choice3 Int @default(0)
 }
