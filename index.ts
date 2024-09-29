@@ -24,7 +24,7 @@ app.get('/number/:number', async (req, res) => {
       }); 
   
       if (!allpro) {
-        return res.status(404).json({ error: 'product not found' });
+        return res.status(404).json({ error: 'number not found' });
       }
   
       res.json(allpro);
